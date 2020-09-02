@@ -1,0 +1,33 @@
+<!-- START :: Google Map code -->
+
+<google-map height="500px" width="100%" [center]="center">
+    <map-marker *ngFor="let marker of markers" [position]="marker.position" [label]="marker.label"
+        [title]="marker.title" [options]="marker.options" (mapDragend)="onMapDrag($event)">
+    </map-marker>
+</google-map>
+
+<!-- End :: Google Map code -->
+
+<p>Current Latitude: {{latitude}}</p>
+<p>Current Longitude: {{longitude}}</p>
+
+<a href="https://github.com/imchandanys/GoogleMapsInAngularApplications" target="_blank">
+    <p>Github Repository</p>
+</a>
+
+<br /><br />
+
+<div class="footer">
+    <a class="icons" href="https://imchandanys.github.io/blog" target="_blank">
+        <img src="../assets/images/website.png" height="20px" />
+    </a>
+    <a class="icons" href="https://www.instagram.com/imchandanys" target="_blank">
+        <img src="../assets/images/instagram.png" height="20px" />
+    </a>
+    <a class="icons" href="https://github.com/imchandanys" target="_blank">
+        <img src="../assets/images/github.png" height="20px" />
+    </a>
+    <a class="icons" href="https://stackoverflow.com/users/10335860" target="_blank">
+        <img src="../assets/images/stackoverflow.png" height="20px" />
+    </a>
+</div>
